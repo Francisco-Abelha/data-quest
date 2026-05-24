@@ -3,7 +3,8 @@ import math
 
 def get_player_pos():
     while True:
-        coordinates_str = input("Enter new coordinates as floats in format 'x,y,z': ")
+        coordinates_str = input("Enter new coordinates as"" "
+                                "floats in format 'x,y,z': ")
         coordinates_list = coordinates_str.split(",")
         if len(coordinates_list) != 3:
             print("Invalid syntax")
@@ -16,6 +17,7 @@ def get_player_pos():
         except ValueError as e:
             print(f"Error on parameter '{x}': {e}")
             continue
+
 
 def main() -> None:
     print("=== Game Coordinate System ===\n")

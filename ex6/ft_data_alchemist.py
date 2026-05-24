@@ -1,5 +1,6 @@
 import random
 
+
 def main() -> None:
     print("=== Game Data Alchemist ===\n")
     initial_list = [
@@ -22,7 +23,9 @@ def main() -> None:
     print(f"Scores dict: {names_dict}")
     average = sum(names_dict.values()) / len(names_dict)
     print(f"Score average is {average:.2f}")
-    high_scores = {item: value for item, value in names_dict.items() if value > average}
+    high_scores = {
+        item: value for item, value in names_dict.items() if value > average
+    }
     print(f"High scores: {high_scores}")
 
 
